@@ -1,0 +1,131 @@
+@charset "UTF-8";
+:root {
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-background-color: #2f303a;
+  --special-background-color: #f5f4fa;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+* li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ============== gallery ============== */
+.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/img/gallery-364-mobile-x1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("../images/img/gallery-364-mobile-x2.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .gallery {
+    background-image: url("../images/img/gallery-786-tab-x1.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("../images/img/gallery-786-tab-x2.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: url("../images/img/gallery-1280-desktop-x1.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("../images/img/gallery-1280-desktop-x2.jpg");
+  }
+}
+.gallery-main {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .gallery-main {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .gallery-main {
+    width: 360px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-main {
+    width: 696px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .gallery-main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* ============== END gallery ============== *//*# sourceMappingURL=main.css.map */
